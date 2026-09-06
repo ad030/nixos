@@ -15,11 +15,12 @@
 
       nixpkgs.overlays = [
         inputs.niri.overlays.niri
-        # fix xwayland-satellite v0.8.2 dropdown menu bug
+        # xwayland-satellite v0.8.2 has a dropdown menu bug for steam
+        # temporary fix by reverting to 0.8.1
         # https://github.com/Supreeeme/xwayland-satellite/issues/468
         (final: prev: {
           xwayland-satellite =
-            (import inputs.nixpkgs {
+            (import inputs."nixpkgs-xwayland-satellite-0.8.1" {
               inherit (prev) system;
             }).xwayland-satellite;
         })

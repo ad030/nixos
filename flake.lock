@@ -182,31 +182,47 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1788316716,
-        "narHash": "sha256-bc7rSpXIdn9QWGNqfWcPZWOhEVF8NoeAZkWq0XWnf/k=",
-        "owner": "nixos",
+        "lastModified": 1788614874,
+        "narHash": "sha256-7QYjT2vHLuX9Z1pdxHXDKCbh1CR3D/2rywB9Tx0MPRg=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3ed67ec0a4d3c7ab4ae1f04f8ee8df07bfa506a2",
+        "rev": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
+        "owner": "NixOS",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
-    "nixpkgs_2": {
+    "nixpkgs-xwayland-satellite-0.8.1": {
       "locked": {
-        "lastModified": 1788405554,
-        "narHash": "sha256-r2f1oUwixlgq9zOdYLqJLfS/lWBT60/IITjhTKI59JU=",
-        "owner": "nixos",
+        "lastModified": 1771339031,
+        "narHash": "sha256-trd38pXq27CxTCacw4swLVIbtpzQz3uEo/yLlkHZEaE=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a5cc6f2c37bf518436dc8d1c288ccd0c43c2f4c4",
+        "rev": "edfd59b795cd752c36d2dae60870cffcd23d3fb1",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "edfd59b795cd752c36d2dae60870cffcd23d3fb1",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1788584326,
+        "narHash": "sha256-Fd3OB8J9JhgliQwOKcqx4M672CInxi1I5VnwsaXeSQo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "6713828a351efa628b025a1adf7f43cbf8597513",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
         "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
@@ -238,6 +254,7 @@
         "niri": "niri",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
+        "nixpkgs-xwayland-satellite-0.8.1": "nixpkgs-xwayland-satellite-0.8.1",
         "sops-nix": "sops-nix"
       }
     },

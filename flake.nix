@@ -2,8 +2,8 @@
   description = "A very basic flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -37,6 +37,13 @@
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # xwayland-satellite v0.8.2 has a dropdown menu bug for steam
+    # temporary fix by reverting to 0.8.1
+    # https://github.com/Supreeeme/xwayland-satellite/issues/468
+    "nixpkgs-xwayland-satellite-0.8.1" = {
+      url = "github:NixOS/nixpkgs/edfd59b795cd752c36d2dae60870cffcd23d3fb1";
     };
   };
 
