@@ -29,21 +29,9 @@
         argument = "group:media:rwX";
       };
       # default permissions
-      "a+default-user-perms" = {
+      "a+default-perms" = {
         type = "a";
-        argument = "d:user::rwX";
-      };
-      "a+default-group-perms" = {
-        type = "a";
-        argument = "d:group::rwX";
-      };
-      "a+default-other-perms" = {
-        type = "a";
-        argument = "d:other::r-X";
-      };
-      "a+mask" = {
-        type = "a";
-        argument = "mask::rwx";
+        argument = "d:user::rwX,d:group::rwX,d:other::r-X";
       };
     };
   };
