@@ -1,8 +1,4 @@
 {
-  config,
-  ...
-}:
-{
   services.nfs.server.enable = true;
 
   fileSystems."/export/tank" = {
@@ -14,26 +10,6 @@
 
     fsType = "none";
     options = [ "bind" ];
-  };
-
-  systemd.tmpfiles.settings."export-tank" = {
-    "/export/tank" = {
-      d = {
-        user = "root";
-        group = "media";
-        mode = "2775";
-      };
-      # ensure media group gets rwx permissions
-      "a+media-perms" = {
-        type = "a";
-        argument = "group:media:rwX";
-      };
-      # default permissions
-      "a+default-perms" = {
-        type = "a";
-        argument = "d:user::rwX,d:group::rwX,d:other::r-X";
-      };
-    };
   };
 
   services.nfs.server.exports = ''
