@@ -15,6 +15,7 @@
       vesktop
       signal-desktop
       obs-studio
+      yt-dlp
     ];
 
     home.packages = with pkgs; [
@@ -36,7 +37,6 @@
       vlc
       swayimg
       lxqt.lximage-qt
-      yt-dlp
 
       simple-scan # scanner (for scanners implementing SANE interface)
       # NOTE: modern printers are compatible with CUPS
