@@ -8,14 +8,8 @@ require("conform").setup({
 	formatters = {
 		["clang-format"] = {
 			prepend_args = {
-				"--style",
-				"file",
 				"--fallback-style",
-				[[{
-                                                BasedOnStyle: LLVM,
-                                                IndentWidth: 8,
-                                                BreakBeforeBraces: Allman
-                                        }]],
+				"LLVM",
 			},
 		},
 		-- ["sql_formatter"] = {
