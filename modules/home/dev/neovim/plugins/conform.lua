@@ -9,6 +9,8 @@ require("conform").setup({
 		["clang-format"] = {
 			prepend_args = {
 				"--style",
+				"file",
+				"--fallback-style",
 				[[{
                                                 BasedOnStyle: LLVM,
                                                 IndentWidth: 8,
