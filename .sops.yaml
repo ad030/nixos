@@ -4,7 +4,7 @@ keys:
 
   # generated from ssh host keys
   # /etc/ssh/ssh_host_ed25519_key.pub
-  - &age_brittle-hollow age1swu2dp4pxctvsa2w20fm6959qg0qsyqxgrsgysh3fj4qdvasm3fsy6r5vv
+  - &age_brittle-hollow age18fcgzg6fyrze4n38dz5e7zhfajr0ds5ujtfneuuytwwz5xl8540qk8hkdc
   - &age_attlerock age146vlmetw6eh8kgcmcuq556phn548j9vyryav3vjstxx83z3v8cgsvyvl3f
   - &age_timber-hearth age1mr26v87srxxatmshfqn9mtenh5p09rskh6l2t994scxhxmazncdquuakpa
 
