@@ -25,6 +25,9 @@
       ];
 
       services = {
+        # Enable power management support for apps
+        upower.enable = true;
+
         # Enable touchpad support (enabled default in most desktopManager).
         libinput.enable = true;
 

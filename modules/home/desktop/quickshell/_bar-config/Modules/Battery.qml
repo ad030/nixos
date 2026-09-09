@@ -10,10 +10,6 @@ import qs.Utilities
 BarModuleRectangle {
         id: root
 
-        implicitWidth: root.implicitHeight
-
-        visible: battery.isLaptopBattery;
-
         readonly property var battery: UPower.displayDevice;
 
         readonly property var icon: battery.isCharging === UPowerDeviceState.Charging ? "" : ( 
@@ -22,6 +18,10 @@ BarModuleRectangle {
                 battery.percentage > 0.4 ? "" :
                 battery.percentage > 0.2 ? "" : ""
         );
+
+        implicitWidth: root.implicitHeight
+
+        visible: battery.isLaptopBattery;
 
         WrapperMouseArea {
                 BarIconText {
