@@ -6,7 +6,7 @@
 }:
 let
   hostname = "brittle-hollow";
-  nixpkgs = inputs.nixpkgs-unstable;
+  nixpkgs = inputs.nixpkgs;
   systemUsers = [ "solanum" ];
 in
 {
