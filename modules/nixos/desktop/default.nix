@@ -67,6 +67,9 @@
           enable = true;
           openFirewall = true;
         };
+        nm-applet = {
+          enable = true;
+        };
       };
 
     };
